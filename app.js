@@ -41,18 +41,22 @@ app.get("/", function(req, res) {
 
 // ####### Djaafar #######
 
-//Create a path
-app.post("/user/add", function(req, res) {
-    console.log(req.body);
-    //add tab value of form client.
-    tabuser.push(req.body);
-    console.log(tabuser);
-    res.send(req.body);
-});
+// //Create a path
+// app.post("/user/add", function(req, res) {
+//     console.log(req.body);
+//     //add tab value of form client.
+//     tabuser.push(req.body);
+//     console.log(tabuser);
+//     res.send(req.body);
+// });
 
 //load file adduser on the path.
 app.get("/user/add", function(req, res) {
     res.render("adduser");
+});
+
+app.get("/user/login", function(req, res) {
+    res.render('login');
 });
 // ####### Djaafar #######
 
