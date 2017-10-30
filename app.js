@@ -76,7 +76,7 @@ app.listen(9000, function(err) {
         console.log(err);
         return;
     };
-    console.log('Server Ok');
+    console.log('Server Ok, ecoute le port:9000');
 
 });
 
